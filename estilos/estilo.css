@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/fondo.svg);
+}
+
+.contenedor {
+
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contenedor figure {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 100%;
+    box-shadow: 0px 1px 25px rgba(0, 0, 0, .50);
+
+}
+
+.contenedor figure img {
+
+    width: 100%;
+    height: 100%;
+
+    transition: all 500ms ease-out;
+
+}
+
+.contenedor figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 68, 0, 0.4);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor figure:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover>.capa h3 {
+    margin-top: 50%;
+    margin-bottom: 50%;
+
+}
+
+.contenedor figure .capa h3 {
+    color: #fff;
+    font-weight: 60%;
+    margin-bottom: 120px;
+    transition: all 566ms ease-out;
+    margin-top: 30px;
+
+}
+
+.contenedor figure:hover>img {
+    transform: scale(1.2);
+}
+
+img {
+    width: 100px;
+    height: 80px;
+}
+
+@media screen and (max-width:500px) {
+
+    .contenedor figure {
+
+        width: 250px;
+        height: 250px;
+
+    }
+}
+
+@media screen and (max-width:260px) {
+
+    .contenedor figure {
+
+        width: 150px;
+        height: 150px;
+
+    }
+}
+
+@media screen and (max-width:159px) {
+
+    .contenedor figure {
+
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .contenedor figure {
+
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .contenedor figure .capa h3 {
+        font-size: 8px;
+
+    }
+
+
+}
